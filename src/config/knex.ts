@@ -18,8 +18,6 @@ const knex = Knex({
   },
 });
 
-console.log(DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_DATABASE);
-
 export const onDatabaseConnect = async () => knex.raw('SELECT 1 ');
 
 export default knex;
